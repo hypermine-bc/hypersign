@@ -1,12 +1,12 @@
 [submodule "hs-authenticator"]
-	path = hs-authenticator
+	path = src/hs-authenticator
 	url = https://github.com/hypermine-bc/hs-authenticator
 [submodule "hypersign-mobile"]
-	path = hypersign-mobile
+	path = src/hypersign-mobile
 	url = https://github.com/hypermine-bc/hypersign-mobile
 [submodule "hypersign-auth-server"]
-	path = hypersign-auth-server
+	path = src/hypersign-auth-server
 	url = https://github.com/hypermine-bc/hypersign-auth-server
 [submodule "hypersign-sdk"]
-	path = hypersign-sdk
+	path = src/hypersign-sdk
 	url = https://github.com/hypermine-bc/hypersign-sdk
