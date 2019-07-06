@@ -51,7 +51,9 @@ Hypersign leverages full fledged SSO feature from an open source software - *Key
 The protocol is developed keeping all kind of businesses in mind and is highly configurable. It gets easily integrated with all types of applications, be it is Mobile App or Web App or DApp. 
 
 **Video**
+
 link: https://www.loom.com/share/62e4f367f2b64c94923c31b07d661b6d
 
 **Product Details**
+
 link: http://hypermine.in/hypersign/
