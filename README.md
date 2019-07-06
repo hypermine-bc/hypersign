@@ -15,10 +15,10 @@ To understand the problem statement, what and why, please go [here](/docs/overvi
 * [Problem statement](https://github.com/hypermine-bc/hypersign/blob/master/docs/overview.md#problem)
 * [Possible use cases](https://github.com/hypermine-bc/hypersign/blob/master/docs/overview.md#usecases)
 
-## Basic architecture
+## Hypersign basic architecture
 
 ![basic_arch](docs/images/hypersign_-basic.jpg)
 
-## Hypersign-Keycloak architecture 
+## Hypersign SSO architecture 
 
 ![hs-kk_arch](docs/images/hypersign_-_keycloak.jpg)
