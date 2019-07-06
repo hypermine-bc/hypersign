@@ -1,0 +1,80 @@
+# Hypersign E2E workflow
+
+- Hypersign On-Permise (With SSO) : End2End workflow
+  - Company Registration
+    - Company register at HS-Management Portal  
+      - #HS-Management_Portal
+        - Gets Request
+          - Choose subscription type
+          - Company name
+          - Redirection Url
+          - Zone  
+        - Generates companyID
+        - Generates LisenseToken #Research JWT
+          - Time
+          - CompanyId
+        - Sends Response
+          - CompanyId
+          - Lisense Token
+  - HS-SSO Installation at company
+    - #HS-SSO
+      - Download and install HS-SSO
+      - Download the HS-Authenticator [HS-Auth] Jar from Hypersign Website
+      - Setup HS-Auth in the HS-SSO
+      - Setup apps using HS-Auth
+      - Add CompanyId and LisenseToken in the configuration file
+  - End User Registration
+    - User enters 
+      - EmailId
+      - Name
+    - And Clicks the "Register" button
+      - Generates PrivateKey and PublicKey
+      - Generates seed and give it to user for account recovery 
+    - Calls the register endpoint [ #Research] in HS-Authenticator 
+      - #HS-Authenticator
+        - [#Research]  How secret question authenticator registertration happens?
+        - [#Research]  Validate EmailId from Active Directory 
+        - [#Research]  Store publicKey in AD
+  - End User Login
+    - Users hits the app url 
+    - Call goes to HS-SSO
+      - HS-SSO sends the request to HS-Auth Server
+        - CompanyId
+        - LisenseToken
+      - HS-Auth Server reponds with challange
+    - HS-Authenticator
+      - Provider/Renderer
+        - Ask Processor to give Challange 
+        - generates the Hypersign Login page with a QR challage.
+      - Processor
+        - calls HS-Auth Server /provideChallange API endpoint to get a challenge and sends it back to Renderer
+    - User scans the QR from HS-Mobile App
+    - #HS-MobileApp
+      - User signs the QR using his PrivateKey
+      - Sends the signed message with PublicKey to HS-Authenticator.
+      - HS-Authenticator calls validate  API of HS-Auth Server
+        - Signature
+        - LisenseToken
+        - PublicKey
+        - Challange
+      - #HS-AuthServer : Stateless server
+        - The server validates the LisenseToken
+        - Validates the Challange 
+        - Verify the signature
+        - Sends the response (true or false) back to HS-Authenticator
+      - HS-Authenticator returns true or false to the HS-SSO.
+  - Recover Account
+- Glossary
+  - HyperSign Mobile Application [HS-Mobile App]
+  - HyperSign Authentication Server [HS-Auth Server]
+    - HyperSign Management Portal [HS-MP]
+    - HyperSign Analytics Portal [HS-AP]
+  - HyperSign Software Development Kit [HS-SDK]
+  - HyperSign SingleSignOn [HS-SSO]
+    - Hypersign Authenticator [HS-Authenticator] 
+- Things to figure out
+  - #Research 
+
+> Please update this [workflowy](https://workflowy.com/#/6b33b3b58fd9) before editing here.
+
+
