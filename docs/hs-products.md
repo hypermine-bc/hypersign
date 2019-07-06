@@ -1,12 +1,9 @@
-Hypersign Cloud 
-Hypersign On-Permise
+## Hypersign Products
 
-
-- Products
-  - Hypersign Cloud 
-  - Hypersign On-Permise 
-    - With SSO 
-    - Without SSO (company already has KeyCloak)
+- Hypersign Cloud 
+- Hypersign On-Permise 
+  
+## Hypersign Core components
 
 - [HyperSign Mobile Application [HS-Mobile App]](https://github.com/hypermine-bc/hypersign-mobile)  
 - [HyperSign Authentication Server [HS-Auth Server]](https://github.com/hypermine-bc/hypersign-auth-server)
