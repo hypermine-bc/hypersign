@@ -5,7 +5,7 @@ Is a cryptography based SingleSignOn Solution that enables users to securely acc
 ## Table of contents
 
 * [Quick overview](docs/overview.md)
-* [Development Approach] (docs/development-approach.md)
+* [Development Approach](docs/development-approach.md)
 * [Hypersign products and components](docs/hs-products.md)
 * [Hypersign end to end flow](docs/end2endflow.md)
 * [Hypersign website](http://hypermine.in/hypersign/)
