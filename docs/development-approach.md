@@ -7,7 +7,7 @@ Ideation (Winner of Unisys hackathon)
 
 We came up with the idea of Login system where you don’t need to store user credential on server and still be able to authenticate securely using PKI Solution.
 
-### 2. v0.02 
+### 2. v0.03 
  Basic POC login with PKI (Mobileapp + Authserver )
 We used Qusaar(Vuejs based mobile stack) for Mobile app and Nodejs server for Authenserver
 In mobile we implemented ECDSA between mobile and authserver .
