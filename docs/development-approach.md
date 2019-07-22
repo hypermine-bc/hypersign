@@ -2,11 +2,11 @@
 
 ## Releases
 
-### 1. v0.01 :white_check_mark:
+### 1. v0.01 :white_check_mark: 
 
 Ideation
 
-:trophy: (Winner of Unisys hackathon)
+:trophy: [Winner of Unisys hackathon](https://www.linkedin.com/pulse/hacking-through-vikram-anand-bhushan/) **INR 1,00,000**
 
 We came up with the idea of Login system where you don’t need to store user credential on server and still be able to authenticate securely using PKI Solution.
 
@@ -28,12 +28,12 @@ Ideation for full blown SSO via HyperSign+Keycloak
 We researched more on how to get Hypersign market ready as quickly as possible.
 So we came across Full-Blown SSO provided then by Redhat and now IBM-Redhat called Keycloak.
 
-:trophy: Winner of Accenture Hackathon 
+:trophy: Winner of Accenture Hackathon **INR 37,000**
 
 ### 5. v0.13 :white_check_mark:
 Demo a POC of HyperSign-SSO which could authenticate passwordless.
 
-:trophy: Winner of Cybervien Blockchain Hackathon
+:trophy: [Winner of Cybervien Blockchain Hackathon](https://www.linkedin.com/feed/update/urn:li:activity:6528330023722676224) **INR 2,00,000**
 
 ### 5. v0.15 :white_check_mark:
 Dockerisation of the project
