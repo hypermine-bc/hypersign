@@ -31,7 +31,7 @@ In SSO environment, users (or employees in enterprise) just have to remember one
  - HS-SDK
  - HS-SSO
 
-[Here](docs/hs-products.md) is the list of product line.
+[Here](hs-products.md) is the list of product line.
 
 The protocol further enables a user to securely sign transactions in decentralized environments; the **HS-SDK** allows easy authentication to the Blockchain.  Hypersign uses cryptographic algorithms and equations in the mobile application, totally eliminating the need for usernames and passwords. The Application Server (**HS-Auth Service**) does not store user data, rather it relies on the users private key and public key [generated using the ECDSA - Elliptic Curve Digital Signature Algorithm] stored in users device. 
 
