@@ -44,9 +44,20 @@ Voila! Hypersign supports Docker now
 ### 6. v0.1.7
 Keycloak + Hypersign via HS-Authenticator ready.
 
-### 7.v0.1.9
+### 7. v0.1.9
+Beta release with a basic playground 
+
+### 8. v0.2
+Ideation of Market place for all kind of ESign needs via Hypersign.
+
+### 9 v0.2.3
+Basic playground version of Esign app.
+
+### 7.v0.2.5
 Theme customisation feature implemented 
 A client ca be able to customise there theme easily. No need to go through the hassle of keycloak
 
-### 8.v0.2
+### 8.v0.2.7
 Ideation of authenticating over a smart contract essentially installed over a Blockchain network
+
+
