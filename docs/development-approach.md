@@ -50,6 +50,17 @@ Beta release with a basic playground
 ### 8. v0.2
 Ideation of Market place for all kind of ESign needs via Hypersign.
 
+**Products**
+* Biometric Verification
+* Digital Signature
+* Device Control Management
+
+**Solutions**
+* Customer Onboarding
+* Mobile Biometric Authentication
+* Web Authentication (AuthnN/Fido)
+
+
 ### 9 v0.2.3
 Basic playground version of Esign app.
 
