@@ -5,8 +5,9 @@
 ### 1. v0.01 :white_check_mark: 
 
 Ideation - July 2018
+Spent 3 months deigning the architecture and planning the development for hypersign.
 
-:trophy: [Winner of Unisys hackathon](https://www.linkedin.com/pulse/hacking-through-vikram-anand-bhushan/) **INR 1,00,000**
+:trophy: December 2018 [Winner of Unisys hackathon](https://www.linkedin.com/pulse/hacking-through-vikram-anand-bhushan/) **INR 1,00,000**
 
 We came up with the idea of Login system where you don’t need to store user credential on server and still be able to authenticate securely using PKI Solution.
 
