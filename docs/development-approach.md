@@ -1,10 +1,10 @@
-# Development Approach
+# Development Timelines
 
 ## Releases
 
 ### 1. v0.01 :white_check_mark: 
 
-Ideation
+Ideation - July 2018
 
 :trophy: [Winner of Unisys hackathon](https://www.linkedin.com/pulse/hacking-through-vikram-anand-bhushan/) **INR 1,00,000**
 
