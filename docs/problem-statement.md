@@ -1,8 +1,12 @@
 ## Problem Statement
 
-Identity management (IM) have always been challange for enterprises, which has two major components, *Management of identity* and *Management by identity*. *Management of identity* is nothing but **authentication** and *Management by identity* is nothing but **Authorization**. Traditional common used methods of issuing digital identities like, username and password have been proven vulnerable. In order to understand this in a bit details, let's look into how exactly this method of issuing digital identities have evolved over the period of time. 
+Identity management (IM) have always been challange for enterprises, which has two major components, *Management of identity* and *Management by identity*. *Management of identity* is nothing but **authentication** and *Management by identity* is nothing but **Authorization**. Traditional common used methods of issuing digital identities like, username and password have been proven vulnerable. In order to understand this in a bit details, let's look into how exactly this method of issuing digital identities have been evolved over the period of time.
 
-It all started from, service providers storing username and password in plain text in database. Users starts questi
+*Approach 1* : It all started when, service providers stores username and password in `plain text` in the database. But users starts questioning on that, why would system administrator could see my password? 
+
+*Approach 2* : In order to solve this, service provider started encrypting the password and storing the `encrypted password` into database but still could not able to solve the problem as the admin have the encryption key and can see the password any time. Also, there was one more problem with this approach, if two users happens to have same password, the corrosponding text would also be the same. 
+
+*Approach 3* : In order to solve the above problem, serivce providers started storing the HASH of the password in the database. Even this approach have the problem of having 
 
 ### User data breach
 
