@@ -11,7 +11,7 @@ The protocol validates a digital signature produced by a standard  blockchain al
 * [Core components](docs/hs-products.md)
 * [Possible use cases](https://github.com/hypermine-bc/hypersign/blob/master/docs/overview.md#usecases)
 * [Product](docs/screen-shots.md) 
-* [Simple Demo](https://www.loom.com/share/62e4f367f2b64c94923c31b07d661b6d)
+* [Simple Demo](https://github.com/hypermine-bc/hypersign/raw/master/docs/images/demo.mp4)
 * [Development Approach](docs/development-approach.md)
 * [Hypersign website](http://hypermine.in/hypersign/)
 * [Hypersign whitepaper]() (coming up!)
