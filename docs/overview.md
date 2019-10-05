@@ -20,7 +20,7 @@ Hypersign leverages full fledged SSO feature from an open source software - *Key
 
 ## Hypersign basic architecture
 
-![basic_arch](docs/images/overview.png)
+![basic_arch](images/overview.png)
 
 ## Usecases
 
