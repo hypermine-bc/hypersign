@@ -1,12 +1,20 @@
 [submodule "hs-authenticator"]
 	path = hs-authenticator
 	url = https://github.com/hypermine-bc/hs-authenticator
+	branch = master
 [submodule "hypersign-mobile"]
 	path = hypersign-mobile
 	url = https://github.com/hypermine-bc/hypersign-mobile
+	branch = master
 [submodule "hypersign-auth-server"]
 	path = hypersign-auth-server
 	url = https://github.com/hypermine-bc/hypersign-auth-server
+	branch = master
 [submodule "hypersign-sdk"]
 	path = hypersign-sdk
 	url = https://github.com/hypermine-bc/hypersign-sdk
+	branch = master
+[submodule "hs-playground"]
+	path = hs-playground
+	url = https://github.com/hypermine-bc/hs-playground
+	branch = master
