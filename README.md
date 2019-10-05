@@ -6,8 +6,8 @@ The protocol validates a digital signature produced by a standard  blockchain al
 
 ## Table of contents
 
-* [Quick overview](docs/overview.md)
-* [Problem statement](https://github.com/hypermine-bc/hypersign/blob/master/docs/overview.md#problem)
+* [Problem statement](https://github.com/hypermine-bc/hypersign/blob/master/docs/problem-statement.md)
+* [Solution - Hypersign](docs/overview.md)
 * [Core components](docs/hs-products.md)
 * [Possible use cases](https://github.com/hypermine-bc/hypersign/blob/master/docs/overview.md#usecases)
 * [Product](docs/screen-shots.md) 
@@ -15,10 +15,3 @@ The protocol validates a digital signature produced by a standard  blockchain al
 * [Development Approach](docs/development-approach.md)
 * [Hypersign website](http://hypermine.in/hypersign/)
 * [Hypersign whitepaper]() (coming up!)
-
-## Hypersign basic architecture
-
-![basic_arch](docs/images/overview.png)
-
-
-

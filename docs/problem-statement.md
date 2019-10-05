@@ -2,8 +2,6 @@
 
 Identity management (IM) have always been challange for enterprises, which has two major components, *Management of identity* and *Management by identity*. *Management of identity* is nothing but **authentication** and *Management by identity* is nothing but **Authorization**. Traditional common used methods of issuing digital identities like, username and password have been proven vulnerable. In order to understand this in a bit details, let's look into how exactly this method of issuing digital identities have evolved over the period of time. 
 
-> Storing passwords in plain text
-
 It all started from, service providers storing username and password in plain text in database. Users starts questi
 
 ### User data breach
