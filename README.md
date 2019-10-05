@@ -1,27 +1,24 @@
 ![logo](docs/images/hsBanner_logo2.png)
 
-Is a cryptography based SingleSignOn Solution that enables users to securely access applications (web apps as well as DApps) without providing their access credentials [usernames and passwords].
+Hypersign is a cryptographic security and identity solution that enables users to access (Web, Federated and Decentralized) applications with a singular identity without providing their credentials.
+
+The protocol validates a digital signature produced by a standard  blockchain algorithm - ECDSA, in a mobile device using authentication service which is a smart-contract deployed on a blockchain and does not rely on central authority and hence providing a complete decentralised environment for identity management.
 
 ## Table of contents
 
 * [Quick overview](docs/overview.md)
+* [Problem statement](https://github.com/hypermine-bc/hypersign/blob/master/docs/overview.md#problem)
+* [Core components](docs/hs-products.md)
+* [Possible use cases](https://github.com/hypermine-bc/hypersign/blob/master/docs/overview.md#usecases)
+* [Product](docs/screen-shots.md) 
+* [Simple Demo](https://www.loom.com/share/62e4f367f2b64c94923c31b07d661b6d)
 * [Development Approach](docs/development-approach.md)
-* [Hypersign products and components](docs/hs-products.md)
-* [Hypersign end to end flow](docs/end2endflow.md)
 * [Hypersign website](http://hypermine.in/hypersign/)
 * [Hypersign whitepaper]() (coming up!)
-* [Problem statement](https://github.com/hypermine-bc/hypersign/blob/master/docs/overview.md#problem)
-* [Possible use cases](https://github.com/hypermine-bc/hypersign/blob/master/docs/overview.md#usecases)
-
-## Demo
-
-https://www.loom.com/share/62e4f367f2b64c94923c31b07d661b6d
-
 
 ## Hypersign basic architecture
 
-![basic_arch](docs/images/hypersign_-basic.jpg)
+![basic_arch](docs/images/overview.png)
 
-## Hypersign SSO architecture 
 
-![hs-kk_arch](docs/images/hypersign_-_keycloak.jpg)
+

@@ -5,7 +5,10 @@
   
 ## Hypersign Core components
 
-- [HyperSign Mobile Application [HS-Mobile App]](https://github.com/hypermine-bc/hypersign-mobile)  
+
+![core-components](images/core-component.png)
+
+- [HyperSign Mobile Application [HS-Mobile App]](https://github.com/hypermine-bc/hypersign-mobile) 
 - [HyperSign Authentication Server [HS-Auth Server]](https://github.com/hypermine-bc/hypersign-auth-server)
   - HyperSign Management Portal [HS-MP] (To be developed)
   - HyperSign Analytics Portal [HS-AP] (To be developed)
