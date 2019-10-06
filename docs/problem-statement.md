@@ -27,7 +27,7 @@ Example: password is *SECRET* and it is SALTed with *SALT* which is a total of 1
 
 Now, If the PEPPER is to remain a critical secret, then it should also be expect to keep a file full of HASHed password secret too. PEPPERing is like adding a cheap master lock on an already locked bank vault. If we expect to keep our password file secret, then the whole debate about SALTing/PEPPERing is pointless because if an attacker does not have the HASHed password then our problem is anyway solved.
 
-                                            ---
+---
 
 Bottom line is, no matter what we do, we end up facing the same problem. We started with a problem statement, but came up with a solution which generated another problem, again we came with another solution and keep going on, running around in circles, adding more and more locks. This is certainly not the way forward. 
 
@@ -102,7 +102,7 @@ SSO is one of the very important features which an enterprise always looks for. 
 
 Approval management is an important part of any workflow. For instance, if a transaction has to be signed by two parties (multi-sig), in the current scenario, one guy has to create and sign the transaction and send it over to another guy via email or something and then the other guy has to sign it back and submit the transaction. The whole thing starts getting very complicated if we add a bit of complexity - say, for example, *the transaction must get signed by three out of five managers*. There is no such solution currently available wherein an admin can design such workflow for approval of a transaction.
 
-                                            ---
+---
 
 These are some of few problems which we figured out which we want to solve. Please read the [next]() section for the solution.
 
