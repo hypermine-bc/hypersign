@@ -1,6 +1,6 @@
 ## Problem Statement
 
-Identity management (IM) has always been a challenge for companies, whether its securing their internal employee's access to company systems and applications, or securing their customers to access the webapps and databses. This aspect has two major components, *Management of identity* and *Management by identity*. *Management of identity* is primarily **Authentication** and *Management by identity* is **Authorization**.
+Identity management (IM) has always been a challenge for companies, whether its securing their internal employee's access to company systems and applications, or securing their customers to access the webapps and databases. This aspect has two major components, *Management of identity* and *Management by identity*. *Management of identity* is primarily **Authentication** and *Management by identity* is **Authorization**.
 
 Traditionally the common methods of managing digital identities such as ‘usernames and passwords’ have been proven to be less than secure. To understand this in details, let's look into how exactly this method of issuing digital identities have evolved over time.
 
@@ -19,11 +19,11 @@ However, this approach did not really solve problem of two separate users cresti
 
 [*Approach 4*](#): To solve the problem of the same HASH, SPs came up with an idea of ‘SALT’. SALT is a fixed-length arbitrary value (per user) that is added to the input of HASH functions to create a unique HASH for every input, regardless of the input not being uniqu. 
 
-The SPs then started to store the `HASH of (password + SALT)`. SALT is stored in the same database along with the usernames and the HASH. This solution works and is still being used extensively. However, this again causes the challenge of storing the SALT in the same database; which is an exposure to risk of attack (a rainbow table would be useless). 
+The SPs then started to store the `HASH of (password + random_SALT)`. SALT is stored in the same database along with the usernames and the HASH. This solution works and is still being used extensively. However, this again causes the challenge of storing the SALT in the same database; which is an exposure to risk of attack (a rainbow table would be useless). 
 
-Example: password is *SECRET* and it is SALTed with *SALT* which is a total of 10 characters - *SECRETSALT*. The HASH of 256-bits is 32 characters. If a database has already been calculated for every possible sequence of 10 characters, then the HASH for *SECRETSALT* is already known. Adding the SALT created a vulnerability, rather than save the day. Yes, 256-bits is a lot to calculate but computational power in computers is growing exponentially. It was once believed that 64-bits would be secure forever. Ha-Ha.
+Example: password is *SECRET* and it is SALTed with *SALT* which is a total of 10 characters - *SECRETSALT*. The HASH of 256-bits is 32 characters. If a database has already been calculated for every possible sequence of 10 characters, then the HASH for *SECRETSALT* is already known. Adding the SALT did not actually help in this case. Yes, 256-bits is a lot to calculate but computational power in computers is growing exponentially. It was once believed that 64-bits would be secure forever. Ha-Ha.
 
-[*Approach 5*](#): Instead of storing plaintext SALT in the database, the SPs started adding `PEPPER` to the equation. Similar to SALT, ‘PEPPER’ is also an arbitrary value; but unlike SALT, it is unique for all users and is not stored in the same database and hence its a secret. Therefore SPs week now storing a `HASH of (password + random_SALT + unique_PEPPER)` in the database and to add an extra layer of security. 
+[*Approach 5*](#): Instead of storing plaintext SALT in the database, the SPs started adding `PEPPER` to the equation. Similar to SALT, *PEPPER* is also an arbitrary value; but unlike SALT, it is unique for all users and is not stored in the same database and hence its a secret. SPs now storing a `HASH of (password + random_SALT + unique_PEPPER)` in the database to add an extra layer of security. 
 
 Now, If the PEPPER is to remain a critical secret, then it should also be expect to keep a file full of HASHed password secret too. PEPPERing is like adding a cheap master lock on an already locked bank vault. If we expect to keep our password file secret, then the whole debate about SALTing/PEPPERing is pointless because if an attacker does not have the HASHed password then our problem is anyway solved.
 
@@ -53,7 +53,7 @@ The above problem begs the need for password reset calls and that sometimes beco
 
 **Losing out on usability with MFA**
 
-Although Multi-Factor Authentication is one solution to above problems, the vulnerability then lies with the OTP [One Time Password], since the OTP is valid with a timestamp, the risk of a user to potentially share or steal this OTP is very high.   It is possible to implement few more layers of authentication, such as biometrics, facial recognition, security questions and so on, but this is not without loosing out on usability and ergonomics. The time and effort taken to login into an application can be a source of frustration and can result in loss of business. Security vs Useability was, is and always will be a trade off
+Although Multi-Factor Authentication is one solution to above problems, the vulnerability then lies with the OTP [One Time Password], since the OTP is valid with a timestamp, the risk of a user to potentially share or steal this OTP is very high. It is possible to implement few more layers of authentication, such as biometrics, facial recognition, security questions and so on, but this is not without loosing out on usability and ergonomics. The time and effort taken to login into an application can be a source of frustration and can result in loss of business. Security vs Useability was, is and always will be a trade off
 
 **Relying on central *trusted* party for managing your identity**
 
