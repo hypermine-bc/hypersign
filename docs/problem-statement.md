@@ -1,6 +1,6 @@
 ## Problem Statement
 
-Identity management (IM) has always been a challenge for enterprises, which has two major components, *Management of identity* and *Management by identity*. *Management of identity* is primarily **Authentication** and *Management by identity* is **Authorization**. 
+Identity management (IM) has always been a challenge for companies, whether its securing their internal employee's access to company systems and applications, or securing their customers to access the webapps and databses. This aspect has two major components, *Management of identity* and *Management by identity*. *Management of identity* is primarily **Authentication** and *Management by identity* is **Authorization**.
 
 Traditionally the common methods of managing digital identities such as ‘usernames and passwords’ have been proven to be less than secure. To understand this in details, let's look into how exactly this method of issuing digital identities have evolved over time.
 
@@ -43,7 +43,7 @@ Online Media Streaming business is booming. Every one has Netflix, Hotstar or Am
 
 ### Loosing on usability with MFA [Multi-Factor Authentication]
 
-Although Multi-Factor Authentication is one solution to the above problem, the vulnerability then lies with the OTP [One Time Password], since the OTP is valid with a timestamp, the risk of a user to potentially share or steal this OTP is very high.   It is possible to implement few more layers of authentication, such as biometrics, facial recognition, security questions and so on, but this is not without loosing out on usability and ergonomics. The time and effort taken to login into an application can be a source of frustration and can result in loss of business.
+Although Multi-Factor Authentication is one solution to the above problem, the vulnerability then lies with the OTP [One Time Password], since the OTP is valid with a timestamp, the risk of a user to potentially share or steal this OTP is very high.   It is possible to implement few more layers of authentication, such as biometrics, facial recognition, security questions and so on, but this is not without loosing out on usability and ergonomics. The time and effort taken to login into an application can be a source of frustration and can result in loss of business. Security vs Useability was, is and always will be a trade off
 
 ### Loosing one password and gaining access of multiple apps - SSO [Single Sign On]
 
