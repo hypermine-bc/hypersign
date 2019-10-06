@@ -2,9 +2,9 @@
 
 Identity management (IM) has always been a challenge for companies, whether its securing their internal employee's access to company systems and applications, or securing their customers to access the webapps and databases. This aspect has two major components, *Management of identity* and *Management by identity*. *Management of identity* is primarily **Authentication** and *Management by identity* is **Authorization**.
 
-Traditionally the common methods of managing digital identities such as ‘usernames and passwords’ have been proven to be less than secure. To understand this in details, let's look into how exactly this method of issuing digital identities have evolved over time.
+Traditionally the common methods of managing digital identities such as *usernames and passwords* have been proven to be less than secure. To understand this in details, let's look into how exactly this method of issuing digital identities have evolved over time.
 
-[*Approach 1*](#): It all started when service providers [SPs] were storing user credentials  ‘usernames and passwords’ in `plain text` in a database. This method raised concerns such as ‘why should a system administrator be able to see a users credentials’, and ‘in the event of an attack or breach it was easy to read all the credentials of the entire database’. 
+[*Approach 1*](#): It all started when service providers [SPs] were storing user credentials  *usernames and passwords* in `plain text` in a database. This method raised concerns such as ‘why should a system administrator be able to see a users credentials’, and ‘in the event of an attack or breach it was easy to read all the credentials of the entire database’. 
 
 [*Approach 2*](#): To solve this vulnerability, SPs started encrypting the credentials and stored the `encrypted password` into a database. 
 
@@ -26,6 +26,8 @@ Example: password is *SECRET* and it is SALTed with *SALT* which is a total of 1
 [*Approach 5*](#): Instead of storing plaintext SALT in the database, the SPs started adding `PEPPER` to the equation. Similar to SALT, *PEPPER* is also an arbitrary value; but unlike SALT, it is unique for all users and is not stored in the same database and hence its a secret. SPs now storing a `HASH of (password + random_SALT + unique_PEPPER)` in the database to add an extra layer of security. 
 
 Now, If the PEPPER is to remain a critical secret, then it should also be expect to keep a file full of HASHed password secret too. PEPPERing is like adding a cheap master lock on an already locked bank vault. If we expect to keep our password file secret, then the whole debate about SALTing/PEPPERing is pointless because if an attacker does not have the HASHed password then our problem is anyway solved.
+
+                                            ---
 
 Bottom line is, no matter what we do, we end up facing the same problem. We started with a problem statement, but came up with a solution which generated another problem, again we came with another solution and keep going on, running around in circles, adding more and more locks. This is certainly not the way forward. 
 
@@ -78,12 +80,29 @@ There are hundreds of cases where companies are misusing user data (e.g. Cambrid
 
 **User Authentication is a major challenge for DApps**
 
-**Legacy models username/password management are still being used**
+Evolution of Blockchain brings trustless and decentralization into the picture. But the enterprise cannot work in a fully trustless manner. It has its own set of users, which can be allowed doing activities on its application. In case an enterprise is building DApps, it will still want to control access to its application by its users and can not let anyone do transactions on it. To achieve that, the application needs an authentication and authorization mechanism with proper session management. Which is missing in case of decentralized application. 
+
+**Metamask is not user-friendly and cannot scale to all types of application**
+
+It is not that people have not attempted to solve this problem. Metamask is one such solution (although not the complete solution). But it has limitations like, it is not scalable to all kinds of applications like mobile apps and only supports web apps. Moreover, besides this, Metamask stores the private key in the browser which is not good from a security point of view.
 
 **No proper session management**
 
-**Lack of workflow management**
+Let's say we used a solution like Metamask for user's authentication but what about the session management? Some of these questions are yet to be answered.
 
-**Metamask is not user friendly and cannot scale to all  types of application**
+**With legacy type credentials management, companies end up maintaining multiple identities for a user**
+
+Some companies already have a product and want to use a feature of Blockchain. The product has built-in authentication mechanism of username and password, now to use Blockchain, they have to maintain cryptographic key-pair and hence end up maintain multiple identities of a particular user. In some cases, they do not even let the user know that the user's key-pair is being maintained in the server, which violates the principles of trustless and transparency of Blockchain. 
 
 **Lack of SSOs for Decentralised Platforms**
+
+SSO is one of the very important features which an enterprise always looks for. Imagine if all of the applications are DApps and a company wants their employee to use same cryptographic key-pair to login and sign transaction in all of these applications. The feature simply does not exists in DApps world.
+
+**Lack of workflow approval management in DApps**
+
+Approval management is an important part of any workflow. For instance, if a transaction has to be signed by two parties (multi-sig), in the current scenario, one guy has to create and sign the transaction and send it over to another guy via email or something and then the other guy has to sign it back and submit the transaction. The whole thing starts getting very complicated if we add a bit of complexity - say, for example, *the transaction must get signed by three out of five managers*. There is no such solution currently available wherein an admin can design such workflow for approval of a transaction.
+
+                                            ---
+
+These are some of few problems which we figured out which we want to solve. Please read the [next]() section for the solution.
+
