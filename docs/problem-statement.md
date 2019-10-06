@@ -14,9 +14,9 @@ Identity management (IM) has always been a challenge for enterprises, which has 
 
 Bottom line is, no matter what we do, we end up having some problem in order to solve one problem. We started with a problem statement, came up with a solution which created another problem, again we came with another solution and we kept on going on and on. Clearly, this is not the way forward, is what we feel. Hence we categorised IM problems in two different categories. IM problems realted to *Centralised* application and IM problems realted to *Decentralised* applications. 
 
-Note*: This categorization are not very strict in the sense that, 
+Note*: This categorization are not very strict in the sense that, some of these problem may fall in both of the categories.
 
-## Centralized:
+## Centralized Systems
 
 **Weak Password**
 
@@ -50,7 +50,7 @@ Online Media Streaming business is booming these days. Every one has Netflix, Ho
 
 In SSO environment, users (or employees in enterprise) just have to remember one credential and can gain access to multiple service providers. At one hand this seems to be very convient for a user but this brings up a very serious security concerns when he happens to loose his credentials. He loose the controls over all these applications and wont be able to work until he gets a new credentials from an admin which is again resulting in loss of business.
 
-## Decentralized
+## Decentralized Systems
 
 **User Authentication is a major challenge for DApps**
 
