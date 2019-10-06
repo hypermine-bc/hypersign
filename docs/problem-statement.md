@@ -29,24 +29,61 @@ Now, If the PEPPER is to remain a critical secret, then it should also be expect
 
 Bottom line is, no matter what we do, we end up facing the same problem. We started with a problem statement, but came up with a solution which generated another problem, again we came with another solution and keep going on, running around in circles, adding more and more locks. This is certainly not the way forward. 
 
-### User Data Breach
+Hence we categorised IM problems in two different categories. IM problems related to *Centralised* application and IM problems realted to *Decentralised* applications. 
 
-There are hundreds of cases where companies are misusing user data (e.g. Cambridge Analytica). A cyber security researcher has stumbled upon details of over 2 billion emails and passwords floating on the web in plain text. Though GDPR is trying to solve this problem by bringing a law but this not really solving the problem technically.
+Note*: This categorization is not very strict in the sense that, some of these problems may fall in both of the categories.
 
-### Relying on a ‘Central Trusted’ Entity
+## Centralized Systems
+
+**Weak Password**
+
+According to data released by security company [Trustwave](https://www.trustwave.com/en-us/) which has analyzed evidence from almost 700 security breaches that took place in 2013, reveals that weak passwords are still a major problem when it comes to security. During its penetration tests, Trustwave collected 626,718 stored passwords and managed to recover more than half of them in minutes. 92 per cent of the sample was able to be cracked in 31 days. Weak or default passwords contributed to a third of the investigated breaches.
+
+**Complex Password Policies**
+
+Advice on password length and complexity is certainly a good first step. However, this does not mitigate users’ tendencies to pick passwords based on common words, with additional character substitutions. For example, a user may choose a password such as Password1!, which may satisfy length and complexity requirements (at least 10 characters long and a mixture of upper- and lower-case letters, digits and special characters). Unfortunately, this is a commonly used password and can be found in most dictionaries compiled for password cracking.
+
+**Loss in revenue due to forgotten Passwords**
+
+Sometimes what happens that highly complex password policies force the user to create passwords which are very hard to remember and hence end up losing them. 
+
+**Credential management is a major expense for corporates [password reset calls]**
+
+The above problem begs the need for password reset calls and that sometimes becomes expenses for businesses.
+
+**Losing out on usability with MFA**
+
+Although Multi-Factor Authentication is one solution to above problems, the vulnerability then lies with the OTP [One Time Password], since the OTP is valid with a timestamp, the risk of a user to potentially share or steal this OTP is very high.   It is possible to implement few more layers of authentication, such as biometrics, facial recognition, security questions and so on, but this is not without loosing out on usability and ergonomics. The time and effort taken to login into an application can be a source of frustration and can result in loss of business. Security vs Useability was, is and always will be a trade off
+
+**Relying on central *trusted* party for managing your identity**
 
 When we entrust an entity to store secure credentials - we create what is called ‘HoneyPots’ - a centralised database full of user credentials. The more the credentials the larger the HoneyPot, the greater the incentive of an attacker to attack the database. Additionally, There is no guarantee the trusted entity is not going to misuse the data for unethical purposes. Last, but not least, the most critical question is what happens if there is an inside job, one or a group of the employees decide to go rogue? 
 
-### Password Sharing in OMS [Online Media Streaming]
+**Password Sharing**
 
-Online Media Streaming business is booming. Every one has Netflix, Hotstar or Amazon Prime account. These companies are loosing millions of dollars in potential revenue due to some of their customers buying subscriptions and sharing these credentials with their friends and family  this is resulting in massive losses for these companies.
+Online Media Streaming business is booming these days. Everyone has Netflix, Hotstar or Amazon Prime accounts. But there are people who is buying subscriptions and sharing their credentials with their friends and family and hence resulting in a huge loss for businesses.
 
-### Reduced Usability with MFA [Multi-Factor Authentication]
-
-Although Multi-Factor Authentication is one solution to the above problem, the vulnerability then lies with the OTP [One Time Password], since the OTP is valid with a timestamp, the risk of a user to potentially share or steal this OTP is very high.   It is possible to implement few more layers of authentication, such as biometrics, facial recognition, security questions and so on, but this is not without loosing out on usability and ergonomics. The time and effort taken to login into an application can be a source of frustration and can result in loss of business. Security vs Useability was, is and always will be a trade off
-
-### One password to access Multiple Applications - SSO [Single Sign On]
+**Losing one credential causes loss of access to all apps in SSO**
 
 In large enterprises where employees are required to log into multiple applications in one day; which is essentially a SSO [Single Sign On] environment, users just have to remember one credential and gain access to multiple applications. 
 
 On one hand this may to be very convenient for a user, but this raises serious security concerns when the users single access password gets leaked or hacked. This leads to two consequent scenarios; first,  The hacker who stole the password, now has access to all the applications in the enterprise; and second, the users who got hacked are now locked out of all the applications and are unable to work until an authorised system admin issues a new set of credentials for that user. Risks of downtime, lost business and above all else, exposure to risk.
+
+**User Data Breach**
+
+There are hundreds of cases where companies are misusing user data (e.g. Cambridge Analytica). A cyber security researcher has stumbled upon details of over 2 billion emails and passwords floating on the web in plain text. Though GDPR is trying to solve this problem by bringing a law but this not really solving the problem technically.
+
+
+## Decentralized Systems
+
+**User Authentication is a major challenge for DApps**
+
+**Legacy models username/password management are still being used**
+
+**No proper session management**
+
+**Lack of workflow management**
+
+**Metamask is not user friendly and cannot scale to all  types of application**
+
+**Lack of SSOs for Decentralised Platforms**
