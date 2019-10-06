@@ -29,23 +29,23 @@ Now, If the PEPPER is to remain a critical secret, then it should also be expect
 
 Bottom line is, no matter what we do, we end up facing the same problem. We started with a problem statement, but came up with a solution which generated another problem, again we came with another solution and keep going on, running around in circles, adding more and more locks. This is certainly not the way forward. 
 
-### User data breach
+### User Data Breach
 
 There are hundreds of cases where companies are misusing user data (e.g. Cambridge Analytica). A cyber security researcher has stumbled upon details of over 2 billion emails and passwords floating on the web in plain text. Though GDPR is trying to solve this problem by bringing a law but this not really solving the problem technically.
 
-### Relying on a ‘central trusted’ entity
+### Relying on a ‘Central Trusted’ Entity
 
 When we entrust an entity to store secure credentials - we create what is called ‘HoneyPots’ - a centralised database full of user credentials. The more the credentials the larger the HoneyPot, the greater the incentive of an attacker to attack the database. Additionally, There is no guarantee the trusted entity is not going to misuse the data for unethical purposes. Last, but not least, the most critical question is what happens if there is an inside job, one or a group of the employees decide to go rogue? 
 
-### Password sharing in OMS [Online Media Streaming]
+### Password Sharing in OMS [Online Media Streaming]
 
 Online Media Streaming business is booming. Every one has Netflix, Hotstar or Amazon Prime account. These companies are loosing millions of dollars in potential revenue due to some of their customers buying subscriptions and sharing these credentials with their friends and family  this is resulting in massive losses for these companies.
 
-### Loosing on usability with MFA [Multi-Factor Authentication]
+### Reduced Usability with MFA [Multi-Factor Authentication]
 
 Although Multi-Factor Authentication is one solution to the above problem, the vulnerability then lies with the OTP [One Time Password], since the OTP is valid with a timestamp, the risk of a user to potentially share or steal this OTP is very high.   It is possible to implement few more layers of authentication, such as biometrics, facial recognition, security questions and so on, but this is not without loosing out on usability and ergonomics. The time and effort taken to login into an application can be a source of frustration and can result in loss of business. Security vs Useability was, is and always will be a trade off
 
-### Loosing one password and gaining access of multiple apps - SSO [Single Sign On]
+### One password to access of Multiple Applications - SSO [Single Sign On]
 
 In large enterprises where employees are required to log into multiple applications in one day; which is essentially a SSO [Single Sign On] environment, users just have to remember one credential and gain access to multiple applications. 
 
