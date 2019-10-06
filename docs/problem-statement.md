@@ -12,43 +12,43 @@ Identity management (IM) has always been a challenge for enterprises, which has 
 
 [*Approach 5*](#): Instead of storing plain salt in the database, the server started using something called `pepper`. Like salt, pepper is random value but unlike, its unique for all users and is not stored into the database and hence its a secret. So now they started to store `HASH of (password + random-salt + unique-pepper)` in the database and to add an extra layer of security. But if we are going to expect to keep a pepper secret, then we should also expect to keep a password file full of hashed password secret too. Peppering is like putting a cheap master lock on a bank vault. If we expect to keep our password file secret, then the whole debate about salting/peppering is pointless because if an attacker does not have the hashed password then our problem is anyway solved.
 
-Bottom line is, no matter what we do, we end up having some problem in order to solve one problem. We started with a problem statement, came up with a solution which created another problem, again we came with another solution and we kept on going on and on. Clearly, this is not the way forward, is what we feel. Hence we categorised IM problems in two different categories. IM problems realted to *Centralised* application and IM problems realted to *Decentralised* applications. 
+Bottom line is, no matter what we do, we end up having some problem in order to solve one problem. We started with a problem statement, came up with a solution which created another problem, again we came with another solution and we kept on going on and on. This is not the way forward, is what we feel. Hence we categorised IM problems in two different categories. IM problems related to *Centralised* application and IM problems realted to *Decentralised* applications. 
 
-Note*: This categorization are not very strict in the sense that, some of these problem may fall in both of the categories.
+Note*: This categorization is not very strict in the sense that, some of these problems may fall in both of the categories.
 
 ## Centralized Systems
 
 **Weak Password**
 
-According to data released by security company [Trustwave](https://www.trustwave.com/en-us/) which has analyzed evidence from almost 700 security breaches that took place in 2013, reveals that weak passwords are still a major problem when it comes to security. During its penetration tests Trustwave collected 626,718 stored passwords and managed to recover more than half of them in minutes. 92 percent of the sample were able to be cracked in 31 days. Weak or default passwords contributed to a third of the investigated breaches.
+According to data released by security company [Trustwave](https://www.trustwave.com/en-us/) which has analyzed evidence from almost 700 security breaches that took place in 2013, reveals that weak passwords are still a major problem when it comes to security. During its penetration tests, Trustwave collected 626,718 stored passwords and managed to recover more than half of them in minutes. 92 per cent of the sample was able to be cracked in 31 days. Weak or default passwords contributed to a third of the investigated breaches.
 
 **Complex Password Policies**
 
-Advice on password length and complexity is certainly a good first step. However, this does not mitigate users’ tendencies to pick passwords based on common words, with additional character substitutions. For example, a user may choose a password such as Password1!, which may satisfy length and complexity requirements (at least 10 characters long and a mixture of upper- and lower-case letters, digits and special characters). Unfortunately, this is a commonly used password, and can be found in most dictionaries compiled for password cracking.
+Advice on password length and complexity is certainly a good first step. However, this does not mitigate users’ tendencies to pick passwords based on common words, with additional character substitutions. For example, a user may choose a password such as Password1!, which may satisfy length and complexity requirements (at least 10 characters long and a mixture of upper- and lower-case letters, digits and special characters). Unfortunately, this is a commonly used password and can be found in most dictionaries compiled for password cracking.
 
 **Loss in revenue due to forgotten Passwords**
 
-Sometimes what happens that highly complex password policies force user to create passwords which are very hard to remember and hence end up loosing them. 
+Sometimes what happens that highly complex password policies force the user to create passwords which are very hard to remember and hence end up losing them. 
 
-**Credential management is major expense for corporates [password reset calls]**
+**Credential management is a major expense for corporates [password reset calls]**
 
-The above problem begs need for password reset calls and that sometime becomes expenses for businesses.
+The above problem begs the need for password reset calls and that sometimes becomes expenses for businesses.
 
 **Losing out on usability with MFA**
 
-MFA could be one solution. But since the OTP is valid for some timestamp, people get chance to even share their OTP with friends. Definitely, you can implement few more layers of authentication but then you will loose on usability and the end user get annoyed by the application, which is again resulting in loss of business.
+MFA could be one solution. But since the OTP is valid for some timestamp, people get the chance to even share their OTP with friends. You can implement a few more layers of authentication but then you will loose on usability and the end user get annoyed by the application, which is again resulting in loss of business.
 
 **Relying on central *trusted* party for managing your identity**
 
-You are trusting on this party to secure your credentials (though in HASHed form - there are attacks possible) and not misusing it for unethical purpose but what if one of the employee goes rogue?
+You are trusting on this party to secure your credentials (though in HASHed form - there are attacks possible) and not misusing it for unethical purpose but what if one of the employees goes rogue?
 
 **Password Sharing**
 
-Online Media Streaming business is booming these days. Every one has Netflix, Hotstar or Amazon Prime accounts. But there are people who is buying subscriptions and sharing their credentials with their friends and family and hence resulting a huge loss for businesses.
+Online Media Streaming business is booming these days. Everyone has Netflix, Hotstar or Amazon Prime accounts. But there are people who is buying subscriptions and sharing their credentials with their friends and family and hence resulting in a huge loss for businesses.
 
 **Losing one credential causes loss of access to all apps in SSO**
 
-In SSO environment, users (or employees in enterprise) just have to remember one credential and can gain access to multiple service providers. At one hand this seems to be very convient for a user but this brings up a very serious security concerns when he happens to loose his credentials. He loose the controls over all these applications and wont be able to work until he gets a new credentials from an admin which is again resulting in loss of business.
+In SSO environment, users (or employees in an enterprise) just have to remember one credential and can gain access to multiple service providers. At one hand this seems to be very convenient for a user but this brings up a very serious security concern when he happens to lose his credentials. He loses the controls over all these applications and won't be able to work until he gets new credentials from an admin which is again resulting in loss of business.
 
 ## Decentralized Systems
 
