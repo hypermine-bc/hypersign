@@ -8,6 +8,7 @@ The protocol validates a digital signature produced by a standard  blockchain al
 
 * [Problem statement](https://github.com/hypermine-bc/hypersign/blob/master/docs/problem-statement.md)
 * [Solution - Hypersign](docs/overview.md)
+* [Hypersign features](docs/overview.md#features)
 * [Core components](docs/hs-products.md)
 * [Possible use cases](https://github.com/hypermine-bc/hypersign/blob/master/docs/overview.md#usecases)
 * [Product](docs/screen-shots.md) 

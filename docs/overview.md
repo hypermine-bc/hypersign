@@ -22,6 +22,10 @@ Hypersign leverages full fledged SSO feature from an open source software - *Key
 
 ![basic_arch](images/overview.png)
 
+## Features
+
+![features](images/Features.png)
+
 ## Usecases
 
 - Online Media Streaming (eliminate password Sharing)
