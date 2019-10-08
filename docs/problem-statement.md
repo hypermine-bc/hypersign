@@ -113,7 +113,7 @@ The existing applications already have a built-in authentication mechanism for u
 
 **Lack of SSOs for Decentralised Platforms**
 
-‘Single Sign Ons’ currently do no exist in the work of DLT. Managing identities, transactions and authentication for multiple users using one single Key-Pair is a the need of the hour to facilitate the rapid migration towards decentralised environments.
+‘Single Sign Ons’ currently do no exist in the work of DLT. Managing identities, transactions and authentication for multiple users across multiple Dapps, using one single Key-Pair is a the need of the hour to facilitate the rapid migration towards decentralised environments.
 
 **Lack of workflow approval management in DApps**
 
