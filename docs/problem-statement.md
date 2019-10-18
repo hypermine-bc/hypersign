@@ -117,7 +117,7 @@ The existing applications already have a built-in authentication mechanism for u
 
 **Lack of workflow approval management in DApps**
 
-Approval management is an important part of any workflow. For instance, if a transaction has to be signed by two or more parties (multi-sig), Bob has to create and sign the transaction and send it over to Alice via email [or some other form] and then Alice has to ‘sign it’ and send it back to Bob and then Bob can submit the transaction. 
+Approval management is an important part of any workflow. For instance, if a transaction has to be signed by two or more parties (multi-sig), Bob has to create and sign the transaction and send it over to Alice via email [or some other form] and then Alice has to ‘sign it’ and submit the transaction. 
 
 The process starts getting complex when more people get involved, for example, *if the transaction must get signed by three out of five managers*. There is no such solution currently available wherein an admin can design such workflow for approval of a transaction.
 
