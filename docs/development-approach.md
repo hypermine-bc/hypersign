@@ -42,8 +42,11 @@ Dockerisation of the project
 Voila! Hypersign supports Docker now
  
 
-### 6. v0.1.7
+### 6. v0.1.7 :white_check_mark:
 Keycloak + Hypersign via HS-Authenticator ready.
+:trophy: [Hypermine|Hypersign is accepted at India Accelerator Program](https://www.indiaaccelerator.co/)
+
+:trophy: [Hypermine|Hypersign gets a  wildcard entry to Aeternity Blockchain Accelator Program](https://twitter.com/IBCMedia_/status/1183040033369935873)
 
 ### 7. v0.1.9
 Beta release with a basic playground 
