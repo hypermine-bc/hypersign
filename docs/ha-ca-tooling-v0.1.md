@@ -20,6 +20,8 @@ Two ways of interacting with a Hyperledger Fabric CA server:
 - Hyperledger Fabric CA client
 - Fabric SDKs
 
+In this doc we will only focus on using CA client.
+
 ## Fabric CA sever
 
 ### Prerequisites
