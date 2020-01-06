@@ -18,7 +18,7 @@ The protocol further enables a user to securely sign transactions in decentraliz
 Hypersign leverages full fledged SSO feature from an open source software - *KeyCloak* - in order to provide a complete solution for Identity Management and Access Management. As mentioned earlier, Hypersign does not uses username and password, rather uses public key cryptography for access where users have complete control of their private key which never leaves their mobile device whatsoever. The protocol validates the digital signature, produced by ECDSA algorithm in mobile device (**HS-Mobile App**), on **HS-Auth Service** which is nothing but a smart contract deployed on Ethereum Blockchain and not relying on central authority for signature verification and hence providing a complete  trust less and decentralized environment for SSO.
 
 
-## How does it works?
+## How does it work?
 
 ![basic_arch](images/how-it-works.png)
 
