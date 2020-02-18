@@ -28,6 +28,7 @@ Hypersign leverages full fledged SSO feature from an open source software - *Key
 - When user wants to login to a website, which was pre-registered on Hypersign-SSO under a relam or company, the website produces a QR code scan. Visit [here](https://github.com/hypermine-bc/hypersign/blob/master/docs/registration_%26_login.md#login) for complete login process. 
 - User scans the QR code, signs the message and sends the digital signature and public key with the login request to Hypersign AuthServer.
 - The Hypersign AuthServer, does the preliminary validation and calls the blockchain to verify the digital signature and returns the response. 
+- The response is then finally redirected to the client (or Relying party [RP]) for user to access resources.
 
 
 ## Features
