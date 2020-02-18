@@ -17,6 +17,7 @@ The protocol validates a digital signature produced by a standard  blockchain al
 * [Hypersign website](http://hypermine.in/hypersign/)
 * [Hypersign technical deck](docs/Hypersign-Technical-Deck.pdf)
 * [Hypersign whitepaper](#) (coming up!)
+* [Quick-start](https://github.com/hypermine-bc/hypersign-quickstart)
 
 ## How does it works?
 
