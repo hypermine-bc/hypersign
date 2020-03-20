@@ -53,6 +53,15 @@ Hypersign Login also enables service providers to ask for permissions when peopl
 
 ![Layered diagram](https://github.com/hypermine-bc/hypersign/blob/master/docs/HS-layredDiagram%20(1).png?raw=true)
 
+### Smart contracts
+
+At high level the solution is built on top three smart contracts. 
+
+- **Identity Manager Contract (IMC)** : The IMC sits on the core and manages users identity.
+- **License Manager Contract (LMC)** : LMC is required for companies to get enrolled with Hypersign.
+- **Hypersign Token Manager Contract (TMC)** : TMC manages the token economics of the system.
+
+![contract](https://github.com/hypermine-bc/hypersign/blob/master/docs/images/hs-smart-contract-layout%20(1).png?raw=true)
 
 
 
